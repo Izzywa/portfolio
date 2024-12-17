@@ -1,0 +1,11 @@
+.portfolio-title {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-title {
+  border: 2px solid red;
+}
+
+/*# sourceMappingURL=App.css.map */
