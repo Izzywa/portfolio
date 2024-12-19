@@ -29,9 +29,10 @@ export default function Home(props){
             text:x
         }
         ,{
-            title: "User Interface",
+            title: "Technical skills",
             text:x
-        }
+        },
+
     ]
 
     function Card(props) {

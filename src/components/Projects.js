@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Projects(props){
     return (
-        <div>
+        <div className="wrapper">
             <h3>Projects</h3>
         </div>
     )

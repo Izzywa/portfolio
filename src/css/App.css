@@ -43,6 +43,7 @@ html, body {
   position: relative;
   z-index: 1;
   border-radius: 5px;
+  cursor: pointer;
 }
 .skill-card::before {
   content: attr(data-title);
@@ -96,7 +97,7 @@ html, body {
   background-color: peachpuff;
 }
 .skill-card.next-card .card-title {
-  animation: typing-horizontal 2s forwards;
+  animation: typing-horizontal 2.5s forwards;
   display: block;
 }
 .skill-card.next-card .card-text {
@@ -109,10 +110,14 @@ html, body {
 .border-btn {
   color: white;
   background-color: salmon;
+  text-transform: capitalize;
   position: absolute;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 0 1em 0;
   font-weight: bold;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
 }
 .border-btn:nth-child(1) {
   top: 0px;
@@ -120,6 +125,10 @@ html, body {
 .border-btn:nth-child(2) {
   bottom: 0px;
   right: 0px;
+}
+.border-btn span {
+  padding: 0.3em 2em 0.3em;
+  letter-spacing: 0;
 }
 
 /*

@@ -4,6 +4,8 @@
     display: flex;
     position: relative;
 }
+$mid-pink : rgb(252 170 149);
+
 html, body {
     margin: 0;
     overflow: hidden;
@@ -38,6 +40,7 @@ html, body {
     position: relative;
     z-index: 1;
     border-radius: 5px;
+    cursor: pointer;
 
     
     &::before {
@@ -88,7 +91,7 @@ html, body {
 
     &.active-card {
         transform: scaleX(80%) scaleY(90%);
-        background-color: rgb(252 170 149);
+        background-color: $mid-pink;
     }
 
     &.next-card {
@@ -100,7 +103,7 @@ html, body {
         background-color: peachpuff;
         
         .card-title {
-            animation: typing-horizontal 2s forwards;
+            animation: typing-horizontal 2.5s forwards;
             display: block;
         }
 
@@ -116,18 +119,30 @@ html, body {
 .border-btn {
     color: white;
     background-color: salmon;
+    text-transform: capitalize;
     position: absolute;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 0 1em 0;
     font-weight: bold;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
     &:nth-child(1) {
         top:0px;
     } 
+
     &:nth-child(2) {
         bottom: 0px;
         right: 0px;
     }
+
+    span {
+        padding: 0.3em 2em 0.3em;
+        letter-spacing: 0;
+    }
 }
+
 /*
 
 .scroll-wrapper {
