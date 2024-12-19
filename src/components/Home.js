@@ -6,27 +6,27 @@ import 'swiper/css'
 export default function Home(props){
     const swiperRef = useRef();
 
-    const list = ["Django","Fullstack web development", "React", "User Interface", "Github"]
+    const list = ["Django","Web development", "React", "User Interface", "Github", "Django","Web development", "React", "User Interface", "Github"]
 
-    function slideTo(event){
-        let slideIndex = event.target.dataset.index - 1
-        if (slideIndex < 0 || slideIndex >= list.length) {
-            slideIndex = list.length - 1 
-        }
-        swiperRef.current.swiper.slideToLoop(slideIndex)
-        console.log('slideindex : '+ slideIndex)
-        console.log('data index: '+ (event.target.dataset.index - 1 ))
-    }
     function Card(props) {
-        let className = "container skill-card";
+        let className = "skill-card";
         if (props.isActive) {
             className += " active-card"
         } else if (props.isNext) {
             className += " next-card"
         }
+
+        function slideTo(event){
+            let slideIndex = props.index - 1
+            if (slideIndex < 0 || slideIndex >= list.length) {
+                slideIndex = list.length - 1 
+            }
+            swiperRef.current.swiper.slideToLoop(slideIndex)
+        }
         return(
-            <div className={className} data-index={props.index} onClick={slideTo}>
-                <div>{props.item}</div>
+            <div className={className} onClick={slideTo} data-title={props.item}>
+                <h6 className="card-title">
+                    {props.item}</h6>
             </div>
         )
     }
@@ -39,7 +39,7 @@ export default function Home(props){
                 <h3>welcome to my portfolio</h3>
             </div>
             <div className="container col-sm-6 col-12 scroll-wrapper">
-                <Swiper
+            <Swiper
                     spaceBetween={0}
                     slidesPerView={3}
                     loop
@@ -59,3 +59,22 @@ export default function Home(props){
         </div>
     )
 }
+
+/**
+ * <Swiper
+                    spaceBetween={0}
+                    slidesPerView={3}
+                    loop
+                    ref={swiperRef}
+                >
+                {list.map((item, index) => {
+                    return(
+                        <SwiperSlide key={index}>
+                           {({ isActive, isNext }) => (
+                            <Card item={item} isActive={isActive} isNext={isNext} index={index}/>
+    )}
+                        </SwiperSlide>
+                    )
+                })}
+                </Swiper>
+ */

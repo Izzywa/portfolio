@@ -16,28 +16,79 @@ html, body {
     }
 }
 
+@keyframes typing {
+    from { height: 0px; }
+    to { height: 100%; }
+  }
+
+  @keyframes typing-horizontal {
+    from { width: 0px; }
+    to { width: 100%; }
+  }
+
+  
 .skill-card {
-    border: 2px solid blue;
     height: 50vh;
-    width: 210%;
+    width: 220%;
     transform: scaleX(50%) scaleY(80%);
     transition: all 0.4s ease;
-    background-color: blue;
+    background-color: salmon;
+    position: relative;
+    z-index: 1;
+
+    
+    &::before {
+        content: attr(data-title);
+        position: absolute;
+        text-orientation:upright;
+        writing-mode: vertical-lr;
+        padding: 2em 1em 0;
+        animation: typing 4s forwards;
+        overflow: hidden;
+        text-wrap: nowrap;
+    }
+
+    &::before, .card-title {
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+    .card-title {
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        overflow: hidden;
+        text-wrap: nowrap;
+        width: 0px;
+        padding: 0.5em 0.5em 0;
+        display: none;
+    }
 
     &.active-card {
-        border: 2px solid red;
         transform: scaleX(80%) scaleY(90%);
-        background-color: red;
     }
 
     &.next-card {
-        border: 2px solid black;
         transform: scaleX(100%) scaleY(100%);
-        background-color: black;
         position: absolute;
-        left: -3em;
+        left: -4em;
+        z-index: 3;
+        display: block;
+        background-color: peachpuff;
+        
+        .card-title {
+            animation: typing-horizontal 2s forwards;
+            display: block;
+        }
+        &::before {
+            animation: none;
+            display: none;
+        }
     }
 }
+/*
 
 .scroll-wrapper {
     position: relative;
@@ -48,4 +99,5 @@ html, body {
     align-items: center;
     display: flex;
     position: relative;
-}
+}*/
+
