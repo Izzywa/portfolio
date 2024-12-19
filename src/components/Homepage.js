@@ -1,18 +1,10 @@
 import React from "react";
-import Profile from "./Profile";
-import Projects from "./Projects";
+import Home from "./Home";
 
 export default function Homepage(props) {
     return (
-        <>
-        <div className='portfolio-title'>
-        <h1>portfolio</h1>
-        </div>
-
         <div>
-            <Profile />
-            <Projects/>
+            <Home/>
         </div>
-        </>
     )
 }

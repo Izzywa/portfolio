@@ -1,10 +1,51 @@
-%center {
+%flex-center {
     justify-content: center;
-    display: flex;
     align-items: center;
+    display: flex;
+}
+html, body {
+    margin: 0;
 }
 
-.portfolio-title {
-    border: 2px solid red;
-    @extend %center;
+.wrapper {
+    overflow: scroll;
+    @extend %flex-center;
+    height: 100vh;
+    .container:nth-child(1){
+        padding-left: 2em;
+    }
+}
+
+.skill-card {
+    border: 2px solid blue;
+    height: 50vh;
+    width: 210%;
+    transform: scaleX(50%) scaleY(80%);
+    transition: all 0.4s ease;
+    background-color: blue;
+
+    &.active-card {
+        border: 2px solid red;
+        transform: scaleX(80%) scaleY(90%);
+        background-color: red;
+    }
+
+    &.next-card {
+        border: 2px solid black;
+        transform: scaleX(100%) scaleY(100%);
+        background-color: black;
+        position: absolute;
+        left: -3em;
+    }
+}
+
+.scroll-wrapper {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
 }
