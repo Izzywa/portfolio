@@ -2,13 +2,15 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    position: relative;
 }
 html, body {
     margin: 0;
+    overflow: hidden;
 }
 
 .wrapper {
-    overflow: scroll;
+    overflow: hidden;
     @extend %flex-center;
     height: 100vh;
     .container:nth-child(1){
@@ -35,6 +37,7 @@ html, body {
     background-color: salmon;
     position: relative;
     z-index: 1;
+    border-radius: 5px;
 
     
     &::before {
@@ -42,10 +45,13 @@ html, body {
         position: absolute;
         text-orientation:upright;
         writing-mode: vertical-lr;
-        padding: 2em 1em 0;
-        animation: typing 4s forwards;
+        padding: 1em 1em 0;
         overflow: hidden;
         text-wrap: nowrap;
+    }
+
+    &.visible::before {
+        animation: typing 3s forwards;
     }
 
     &::before, .card-title {
@@ -66,8 +72,23 @@ html, body {
         display: none;
     }
 
+    .card-text {
+        transition: all 0.4s ease;
+        transform: scaleX(0);
+        align-items: center;
+        display: flex;
+        height: 90%;
+        overflow-y: scroll;
+        padding-right: calc(0.09 * 100vw);
+
+        p {
+            padding-left: 0.5em;
+        }
+    }
+
     &.active-card {
         transform: scaleX(80%) scaleY(90%);
+        background-color: rgb(252 170 149);
     }
 
     &.next-card {
@@ -82,10 +103,29 @@ html, body {
             animation: typing-horizontal 2s forwards;
             display: block;
         }
+
+        .card-text {
+            transform:scaleX(100%);
+        }
         &::before {
-            animation: none;
             display: none;
         }
+    }
+}
+
+.border-btn {
+    color: white;
+    background-color: salmon;
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 1em 0;
+    font-weight: bold;
+    &:nth-child(1) {
+        top:0px;
+    } 
+    &:nth-child(2) {
+        bottom: 0px;
+        right: 0px;
     }
 }
 /*
