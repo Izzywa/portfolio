@@ -1,4 +1,4 @@
-.wrapper {
+.profile-wrapper .profile-side-title, .wrapper {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -6,7 +6,6 @@
 
 html, body {
   margin: 0;
-  overflow: hidden;
 }
 
 .wrapper {
@@ -153,16 +152,21 @@ html, body {
 .profile-wrapper .row {
   width: 100vw;
 }
-.profile-wrapper .sm-view-div, .profile-wrapper .lg-view-div {
-  background-color: peachpuff;
-  border-radius: 5px;
-  cursor: pointer;
-}
 .profile-wrapper .contact-div, .profile-wrapper .description-div {
   color: white;
 }
 .profile-wrapper .contact-div p {
   margin: 2px;
+}
+.profile-wrapper .profile-side-title {
+  border-radius: 5px;
+  background-color: peachpuff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.3em 0 0.3em;
+}
+.profile-wrapper .profile-side-div {
+  background-color: salmon;
 }
 .profile-wrapper .image-div {
   overflow: hidden;

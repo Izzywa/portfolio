@@ -9,7 +9,6 @@ $border : 2px solid red;
 
 html, body {
     margin: 0;
-    overflow: hidden;
 }
 
 .wrapper {
@@ -170,12 +169,6 @@ html, body {
     .row {
         width: 100vw;
     }
-    
-    .sm-view-div, .lg-view-div {
-        background-color: peachpuff;
-        border-radius: 5px;
-        cursor: pointer;
-    }
 
     .contact-div, .description-div {
         color: white;
@@ -183,6 +176,20 @@ html, body {
     .contact-div p{
         margin: 2px;
     }
+
+    .profile-side-title {
+        border-radius: 5px;
+        @extend %flex-center;
+        background-color: peachpuff;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 0.3em 0 0.3em;
+    }
+
+    .profile-side-div {
+        background-color: salmon;
+    }
+
     .image-div {
         overflow: hidden;
         border-radius: 50%;
@@ -228,4 +235,3 @@ html, body {
     display: flex;
     position: relative;
 }*/
-
