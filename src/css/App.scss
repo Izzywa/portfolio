@@ -33,14 +33,12 @@ html, body {
   
 .skill-card {
     height: 50vh;
-    width: 220%;
-    transform: scaleX(50%) scaleY(80%);
-    transition: all 0.4s ease;
+    transition: all 0.6s ease;
     background-color: salmon;
     position: relative;
-    z-index: 1;
     border-radius: 5px;
     cursor: pointer;
+    transform: scaleX(80%) scaleY(90%);
 
     
     &::before {
@@ -48,9 +46,16 @@ html, body {
         position: absolute;
         text-orientation:upright;
         writing-mode: vertical-lr;
-        padding: 1em 1em 0;
+        padding: 0.5em 1.5em 0;
         overflow: hidden;
         text-wrap: nowrap;
+        font-size: 15px;
+        letter-spacing: -3px;
+    }
+    &:not(.active-card, .next-card) {
+        &::before {
+            right: 0px;
+        }
     }
 
     &.visible::before {
@@ -80,12 +85,11 @@ html, body {
         transform: scaleX(0);
         align-items: center;
         display: flex;
-        height: 90%;
+        height: 100%;
         overflow-y: scroll;
-        padding-right: calc(0.09 * 100vw);
 
         p {
-            padding-left: 0.5em;
+            padding: 0 1em 0;
         }
     }
 
@@ -95,12 +99,13 @@ html, body {
     }
 
     &.next-card {
-        transform: scaleX(100%) scaleY(100%);
+        left: -50%;
         position: absolute;
-        left: -4em;
-        z-index: 3;
+        width: 200%;
+        z-index: 100;
         display: block;
         background-color: peachpuff;
+        transform: scaleX(100%) scaleY(100%);
         
         .card-title {
             animation: typing-horizontal 2.5s forwards;
@@ -143,6 +148,15 @@ html, body {
     }
 }
 
+.swiper-slide {
+    position: relative;
+    z-index: 1;
+
+
+    &.swiper-slide-next {
+        z-index: 100;
+    }
+}
 /*
 
 .scroll-wrapper {
