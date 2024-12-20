@@ -1,22 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
+import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import { alignProperty } from "@mui/material/styles/cssUtils";
 
 export default function Profile(props) {
-
-    /**
-     * <p>
-                contact: email, linkedin, phone number
-                education
-                work experience (github, linkedin, projects page)
-                core values
-            </p>
-     */
-
-    const profileDivRef = useRef();
-    const workExpRef = useRef();
-    const eduRef = useRef();
 
     const linkedinURL = "https://www.linkedin.com/in/izzatul-najwa-binti-ismail/"
     const workEmail = " ismail.izzatulnajwa@gmail.com"
@@ -31,48 +20,139 @@ export default function Profile(props) {
         window.location.href = linkedinURL
     }
 
-    return(
-        <div className="wrapper profile-wrapper">
-        <div className="row">
-            <div className="work-exp-div col-lg-4 col-12">
-                <div className="d-lg-none sm-view-div">
-                    <h6>Work experience</h6>
-                    <div className="work-exp" ref={workExpRef}>
-                        <p>{profileDesc}</p>
-                    </div>
-                </div>
-                <div className="d-none d-lg-block lg-view-div">
-                    big view 
-                </div>
-            </div>
+    const accordionTitle = {
+            textTransform: "uppercase",
+            minHeight: "2em",
+            maxHeight: "2em",
+            padding: "0 2em 0",
+            fontWeight: "bold",
+            overflow: "hidden",
+            margin: "0px",
+            border: "none",
+            backgroundColor: "peachpuff"
+    }
 
-            <div className="col-lg-4 col-12 profile-div" ref={profileDivRef}>
+
+
+    function ProfileDiv() {
+        return(
+            <>
+            <div>
                 <div className="contact-div text-center">
-                        <p onClick={redirectLinkedin}><LinkedInIcon/> LinkedIn</p>
-                        <p><MailOutlineIcon/> {workEmail}</p>
-                        <p><PhoneIphoneIcon/> {phoneNum}</p>
+                    <p onClick={redirectLinkedin}><LinkedInIcon/> LinkedIn</p>
+                    <p><MailOutlineIcon/> {workEmail}</p>
+                    <p><PhoneIphoneIcon/> {phoneNum}</p>
+                </div>
+            <div className="d-flex align-items-center justify-content-center">
+                <div className="image-div"></div>
+                </div>
+                <div className="description-div text-center">
+                    <p>{profileDesc}</p>
                     </div>
-                <div className="d-flex align-items-center justify-content-center">
-                    <div className="image-div"></div>
-                    </div>
-                    <div className="description-div text-center">
-                        <p>{profileDesc}</p>
-                        </div>
-                    </div>
+            </div>
+            </>
+        )
 
-                <div className="education-div col-lg-4 col-12">
-                <div className="d-lg-none sm-view-div">
-                    <div className="edu-list" ref={eduRef}>
-                        {profileDesc}
-                    </div>
-                <h6>education</h6>
-                </div>
-                <div className="d-none d-lg-block lg-view-div">
-                    big view 
-                </div>
-                </div>
+    }
 
-        </div>
-        </div>
-    )
+       function SmallViewComponent() {
+        const [expanded, setExpanded] = useState('profile')
+        function handleChange(panel) {
+            setExpanded(panel)
+        }
+
+        return (
+            <div>
+                <Accordion 
+                disableGutters
+                elevation={0}
+                sx={{
+                    '&:before': {
+                        display: 'none',
+                    }
+                }}
+                expanded={expanded === 'workExp'} 
+                onChange={() => handleChange('workExp')}>
+                    <AccordionSummary 
+                    aria-controls="workExp-content"
+                    style={accordionTitle}>
+                    Work Experience
+                    </AccordionSummary>
+                    <AccordionDetails>
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                        sit amet blandit leo lobortis eget.
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion
+                disableGutters
+                elevation={0}
+                sx={{
+                    '&:before': {
+                        display: 'none',
+                    }
+                }} 
+                expanded={expanded === 'profile'} 
+                onChange={() => handleChange('profile')}>
+
+                {
+                    expanded === 'profile' ?
+                    null :
+                    <AccordionSummary 
+                        aria-controls="profile-content"
+                        style={accordionTitle}>
+                        profile
+                        </AccordionSummary>
+                }
+
+                        <AccordionDetails
+                        style={{
+                            backgroundColor: "salmon"
+                        }}
+                        >
+                            <ProfileDiv />
+                        </AccordionDetails>
+                </Accordion>
+                <Accordion 
+                disableGutters
+                elevation={0}
+                sx={{
+                    '&:before': {
+                        display: 'none',
+                    }
+                }}
+                expanded={expanded === 'education'} 
+                onChange={() => handleChange('education')}>
+                        <AccordionSummary 
+                        aria-controls="education-content" 
+                        style={accordionTitle}>
+                        Education
+                        </AccordionSummary>
+                        <AccordionDetails>
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
+                            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                            sit amet blandit leo lobortis eget.
+                        </AccordionDetails>
+                </Accordion>
+            </div>
+        )
+       }
+
+
+       return(
+        <div className="wrapper profile-wrapper">
+            <div className="container-fluid">
+            <div className="d-lg-none">
+                <SmallViewComponent />
+            </div>
+            <div className="d-none d-lg-block">
+
+            </div>
+            </div>
+            </div>
+       )
 }
