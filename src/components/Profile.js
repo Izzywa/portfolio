@@ -14,7 +14,8 @@ export default function Profile(props) {
     Etiam non tempus eros, at commodo dolor. Nam facilisis gravida massa ut auctor. Cras eget mauris id risus tincidunt varius. \
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. " 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+    " 
 
     function redirectLinkedin() {
         window.location.href = linkedinURL
@@ -47,7 +48,7 @@ export default function Profile(props) {
                 <div className="image-div"></div>
                 </div>
                 <div className="description-div text-center">
-                    <p>{profileDesc}</p>
+                    <p>{profileDesc} {profileDesc}</p>
                     </div>
             </div>
             </>
