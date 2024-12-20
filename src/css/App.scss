@@ -157,6 +157,42 @@ html, body {
         z-index: 100;
     }
 }
+
+.profile-wrapper {
+    flex-direction: column;
+    background-color: salmon;
+    div {
+        transition:all 0.4s ease;
+    }
+    .image-div {
+        overflow: hidden;
+        border-radius: 50%;
+        height: 12em;
+        width: 12em;
+        background-image: url(../images/cap.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: grayscale(30%);
+        animation: pop 0.2s forwards;
+    }
+}
+@keyframes pop {
+    0%{
+        transform: scaleX(0) scaleY(0);
+    }
+    90% {
+        transform: scaleX(110%) scaleY(110%);
+    }
+    100% {
+        transform: scaleX(100%) scaleY(100%);
+    }
+    
+}
+
+.projects-wrapper {
+    background-color: black;
+}
 /*
 
 .scroll-wrapper {
