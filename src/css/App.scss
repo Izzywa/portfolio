@@ -15,8 +15,11 @@ html, body {
     padding: 0;
     overflow: hidden;
 }
-.app {
+.App {
     overflow: scroll;
+    margin: auto;
+    padding: auto;
+
 }
 
 .wrapper {

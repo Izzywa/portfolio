@@ -13,8 +13,10 @@ html, body {
   overflow: hidden;
 }
 
-.app {
+.App {
   overflow: scroll;
+  margin: auto;
+  padding: auto;
 }
 
 .wrapper {
