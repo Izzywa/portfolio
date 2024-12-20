@@ -1,4 +1,4 @@
-.wrapper {
+.profile-wrapper .sm-view-div h6, .profile-wrapper .lg-view-div h6, .wrapper {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -11,7 +11,7 @@ html, body {
 }
 
 .wrapper {
-  overflow: hidden;
+  overflow: scroll;
   height: 100vh;
 }
 .wrapper .container:nth-child(1) {
@@ -147,7 +147,26 @@ html, body {
   background-color: salmon;
 }
 .profile-wrapper div {
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
+}
+.profile-wrapper .row {
+  width: 100vw;
+}
+.profile-wrapper .sm-view-div, .profile-wrapper .lg-view-div {
+  background-color: peachpuff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.profile-wrapper .sm-view-div h6, .profile-wrapper .lg-view-div h6 {
+  text-transform: uppercase;
+  padding: 0.2em 0 0.2em;
+  font-weight: bold;
+}
+.profile-wrapper .contact-div, .profile-wrapper .description-div {
+  color: white;
+}
+.profile-wrapper .contact-div p {
+  margin: 2px;
 }
 .profile-wrapper .image-div {
   overflow: hidden;
@@ -160,6 +179,9 @@ html, body {
   background-repeat: no-repeat;
   filter: grayscale(30%);
   animation: pop 0.2s forwards;
+}
+.profile-wrapper .contact-div p:first-child {
+  cursor: pointer;
 }
 
 @keyframes pop {

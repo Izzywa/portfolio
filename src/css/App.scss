@@ -12,7 +12,7 @@ html, body {
 }
 
 .wrapper {
-    overflow: hidden;
+    overflow: scroll;
     @extend %flex-center;
     height: 100vh;
     .container:nth-child(1){
@@ -162,7 +162,30 @@ html, body {
     flex-direction: column;
     background-color: salmon;
     div {
-        transition:all 0.4s ease;
+        transition:all 0.3s ease;
+    }
+    .row {
+        width: 100vw;
+    }
+    
+    .sm-view-div, .lg-view-div {
+        background-color: peachpuff;
+        border-radius: 5px;
+        cursor: pointer;
+
+        h6 {
+            @extend %flex-center;
+            text-transform: uppercase;
+            padding: 0.2em 0 0.2em;
+            font-weight: bold;
+        }
+    }
+
+    .contact-div, .description-div {
+        color: white;
+    }
+    .contact-div p{
+        margin: 2px;
     }
     .image-div {
         overflow: hidden;
@@ -175,6 +198,9 @@ html, body {
         background-repeat: no-repeat;
         filter: grayscale(30%);
         animation: pop 0.2s forwards;
+    }
+    .contact-div p:first-child {
+        cursor: pointer;
     }
 }
 @keyframes pop {
