@@ -6,6 +6,8 @@
 }
 $mid-pink : rgb(252 170 149);
 
+$border : 2px solid red;
+
 html, body {
     margin: 0;
     overflow: hidden;
@@ -163,6 +165,7 @@ html, body {
     background-color: salmon;
     div {
         transition:all 0.3s ease;
+        overflow-y: scroll;
     }
     .row {
         width: 100vw;
@@ -218,6 +221,25 @@ html, body {
 
 .projects-wrapper {
     background-color: black;
+}
+
+@keyframes close {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 0px;
+    }
+    
+}
+@keyframes open {
+    0% {
+        height: 0px;
+    } 
+    100% {
+        height: 100%;
+    }
+    
 }
 /*
 

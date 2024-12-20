@@ -148,6 +148,7 @@ html, body {
 }
 .profile-wrapper div {
   transition: all 0.3s ease;
+  overflow-y: scroll;
 }
 .profile-wrapper .row {
   width: 100vw;
@@ -199,6 +200,22 @@ html, body {
   background-color: black;
 }
 
+@keyframes close {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0px;
+  }
+}
+@keyframes open {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 100%;
+  }
+}
 /*
 
 .scroll-wrapper {
