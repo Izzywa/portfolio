@@ -51,7 +51,6 @@ html, body {
   overflow: hidden;
   text-wrap: nowrap;
   font-size: 15px;
-  letter-spacing: -3px;
 }
 .skill-card:not(.active-card, .next-card)::before {
   right: 0px;
