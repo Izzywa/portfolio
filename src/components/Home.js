@@ -17,7 +17,7 @@ export default function Home(props){
         {
             title: "web development",
             text: 'I can provide full stack web application development, \
-            enabling seamless user experiences with interactive user interface \
+            enabling seamless user experiences with interactive user interface, \
             and developing robust application workflows that run behind the scences. \
             I aspire to create application that is robust, scalable and efficient.'
         },

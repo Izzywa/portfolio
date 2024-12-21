@@ -1,12 +1,13 @@
 import React from "react";
 import OnBeat from '../images/OnBeatMobileExample.gif'
 import Network from '../images/Network.gif'
+import Portfolio from '../images/Portfolio.gif'
 
 export default function Projects(props){
     const projectsList = [
         {
             title: 'This Portfolio!',
-            image: OnBeat,
+            image: Portfolio,
             tools: [
                 'JavaScript',
                 'HTML5',
