@@ -5,32 +5,41 @@ import 'swiper/css'
 
 export default function Home(props){
     const swiperRef = useRef();
-    const x = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
-    "Etiam non tempus eros, at commodo dolor. Nam facilisis gravida massa ut auctor. Cras eget mauris id risus tincidunt varius." + 
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " 
 
     const list = [
         {
             title: "react",
-            text:x
+            text: 'React is a JavaScript library that allows for creation of \
+            interactive user interfaces (UI). My experience and skill with React \
+            allows me to build application with improved user experience and faster \
+            rendering.'
         },
         {
             title: "web development",
-            text: x
+            text: 'I can provide full stack web application development, \
+            enabling seamless user experiences with interactive user interface \
+            and developing robust application workflows that run behind the scences. \
+            I aspire to create application that is robust, scalable and efficient.'
         },
         {
             title: "django",
-            text:x
+            text: 'Django is a free and open source high-level Python web framework that \
+            encourages rapid development and clean, pragmatic design. \
+            It is secure, scalable, and helps to complete application quickly.\
+            I am experienced with the use of Django as most of my application was made \
+            with this framework.'
         },
         {
             title: "Github",
-            text:x
+            text: 'GitHub is is one of the most popular resources for developers to share code \
+            or work on projects together. I used GitHub to implement continuous integration \
+            and continuous delivery/deveployment (CI/CD) to streamline my development lifecyle \
+            such as the application of GitHub actions.'
         }
         ,{
             title: "Technical skills",
-            text:x
+            text: 'I am skilled in several programming languages and tools such as:  \
+             Python, JavaScript, HTML, CSS, React, Django, and SQL.'
         },
 
     ]
