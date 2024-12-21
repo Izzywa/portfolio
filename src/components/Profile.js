@@ -16,6 +16,23 @@ export default function Profile(props) {
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
     " 
+    const EducationList = [
+        {
+            location: 'HarvardX',
+            start: new Date(2024, 3).getFullYear(),
+            end: new Date(2024, 3).getFullYear(),
+            certification: [
+                "CS50's Introduction to Computer Science",
+                "CS50's Web Programming with Python and JavaScript"
+            ]
+        },
+        {
+            location: 'Jordan University of Science and Technology',
+            start: new Date(2012, 8).getFullYear(),
+            end: new Date(2017, 7).getFullYear(),
+            certification: ['Bachelor Degree in Dental Surgery']
+        }
+    ]
 
     function redirectLinkedin() {
         window.location.href = linkedinURL
@@ -72,14 +89,31 @@ export default function Profile(props) {
 
     function EduDiv() {
         return(
-            <div className="education profile-side-div">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                    sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                    sit amet blandit leo lobortis eget.
-
-                </p>
+            <div className="education profile-side-div my-3">
+                {EducationList.map((item,index) => {
+                    return(
+                        <div key={index}>
+                            <p>
+                                <strong>{item.location}</strong>
+                                { item.start == item.end ?
+                                <small>[ {item.start} ]</small> 
+                                : 
+                                <small> [ {item.start} - {item.end} ]</small>
+                                }
+                            </p>
+                            <ul>
+                                {item.certification.map((listItem, listIndex) => {
+                                    return (
+                                        <li key={listIndex}>
+                                            {listItem}
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+        
+                        </div>
+                    )
+                })}
             </div>
         )
     }
