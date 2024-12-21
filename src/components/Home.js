@@ -67,7 +67,7 @@ export default function Home(props){
 
     return(
         <div className="wrapper row">
-            <div className="container col-md-6 col-12">
+            <div className="container col-md-6 col-12 p-5">
                 <h3>Hi, I'm</h3>
                 <h1>Izzatul Najwa</h1>
                 <h3>welcome to my portfolio</h3>

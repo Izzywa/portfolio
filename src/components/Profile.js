@@ -38,7 +38,7 @@ export default function Profile(props) {
     function ProfileDiv() {
         return(
             <>
-            <div>
+            <div className="profile-content">
                 <div className="contact-div text-center">
                     <p onClick={redirectLinkedin}><LinkedInIcon/><u>LinkedIn</u></p>
                     <p><MailOutlineIcon/> {workEmail}</p>
@@ -59,6 +59,20 @@ export default function Profile(props) {
     function WorkExpDiv() {
         return(
             <div className="work-exp profile-side-div">
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                    sit amet blandit leo lobortis eget.
+
+                </p>
+            </div>
+        )
+    }
+
+    function EduDiv() {
+        return(
+            <div className="education profile-side-div">
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                     malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
@@ -155,10 +169,7 @@ export default function Profile(props) {
                             color: "white"
                         }}
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
+                        <EduDiv/>
                     </AccordionDetails>
             </Accordion>
         </div>
@@ -181,6 +192,7 @@ export default function Profile(props) {
                 <h6 className="profile-side-title">
                         education
                         </h6>
+                        <EduDiv/>
                 </div>
             </div>
         )

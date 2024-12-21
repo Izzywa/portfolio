@@ -15,7 +15,8 @@ html, body {
 }
 
 .App {
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   margin: auto;
 }
 
@@ -89,7 +90,7 @@ html, body {
   overflow-y: scroll;
 }
 .skill-card .card-text p {
-  padding: 0 1em 0;
+  padding: 1em 1em 2em;
 }
 .skill-card.active-card {
   transform: scaleX(80%) scaleY(90%);
@@ -123,7 +124,7 @@ html, body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   z-index: 100;
-  padding: 0;
+  padding: 0.2em;
   margin: 0;
   cursor: pointer;
 }
@@ -135,7 +136,7 @@ html, body {
   right: 0px;
 }
 .border-btn span {
-  padding: 0.3em 2em 0.3em;
+  padding: 1em 2em 1em;
   letter-spacing: 0;
 }
 
@@ -173,6 +174,10 @@ html, body {
 }
 .profile-wrapper .profile-side-div {
   background-color: salmon;
+  color: white;
+}
+.profile-wrapper .profile-content {
+  max-height: 75vh;
 }
 .profile-wrapper .image-div {
   overflow: hidden;
