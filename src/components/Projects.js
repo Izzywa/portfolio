@@ -149,7 +149,7 @@ export default function Projects(props){
             ],
             description: 
             "Imitating an eBay-like e-commerce auction site, this Django application \
-            allows user to post auction listings, place bids on listings, comment on those listings. \
+            allows user to post auction listings, place bids on listings, comment on those listings, \
             and add listings to a 'watchlist'. This project focuses on the use of Django forms and \
             models to assure that only valid data is stored in the application's database.",
             link: 'https://github.com/Izzywa/auction'

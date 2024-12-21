@@ -246,7 +246,7 @@ html, body {
 .projects-wrapper {
     background-color: black;
     max-height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
     font-family: 'Courier New', Courier, monospace;
     display: block;
     padding: 2em 0 2em;
