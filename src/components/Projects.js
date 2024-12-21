@@ -1,5 +1,6 @@
 import React from "react";
 import OnBeat from '../images/OnBeatMobileExample.gif'
+import Network from '../images/Network.gif'
 
 export default function Projects(props){
     const projectsList = [
@@ -11,8 +12,9 @@ export default function Projects(props){
                 'JavaScript',
                 'HTML5',
                 'CSS3',
-                'React',
-                'Django REST Framework'
+                'React.js',
+                'Django REST Framework',
+                'GitHub Actions'
             ],
             otherResources:[
                 {
@@ -44,20 +46,45 @@ export default function Projects(props){
             provide an accessiblity for those who only have access to smartphones to \
             read or write notes while still keeping the video in view.',
             link: 'https://github.com/Izzywa/OnBeat'
+        },
+
+        {
+            title: 'Network',
+            image: Network,
+            tools: [
+                'Python',
+                'JavaScript',
+                'HTML5',
+                'CSS3',
+                'React',
+                'Django'
+            ],
+            otherResources:[
+                {
+                    name: 'Bootstrap',
+                    link: 'https://getbootstrap.com/docs/5.3/getting-started/introduction/'
+                }
+            ],
+            description: 
+            'This project was made to imitate a social media platfrom that allows users to\
+            make posts, follow other users and "like" a post.\
+            Proper secure measures were implemented to authenticate and authorise users, \
+            providing different functionalities for users based on their authentication status.',
+            link: 'https://github.com/Izzywa/Network'
         }
     ]
 
     function ProjectCard({ item }) {
         return( 
-            <div className="row">
+            <div className="row my-3">
                 <div className="col-12 project-card-title text-center">
                     <h4><strong>{item.title}</strong></h4>
                 </div>
                 <div className="col-lg-6 col-12 text-center">
                     <img className="img-fluid" src={item.image}/>
                 </div>
-                <div className="col-lg-6 col-12 project-card-text my-3">
-                    <a href={item.link}>GitHub Link</a>
+                <div className="col-lg-6 col-12 project-card-text py-2">
+                    <a href={item.link}> - GitHub Link</a>
                     <p>{item.description}</p>
                     <div className="row">
                         <div className="col-6">
