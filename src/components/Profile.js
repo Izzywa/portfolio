@@ -8,6 +8,7 @@ import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 export default function Profile(props) {
 
     const linkedinURL = "https://www.linkedin.com/in/izzatul-najwa-binti-ismail/"
+    const githubURL = "https://github.com/Izzywa"
     const workEmail = " ismail.izzatulnajwa@gmail.com"
     const phoneNum = "+6019 590 7266"
     const profileDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
@@ -75,14 +76,20 @@ export default function Profile(props) {
 
     function WorkExpDiv() {
         return(
-            <div className="work-exp profile-side-div">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                    sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                    sit amet blandit leo lobortis eget.
-
-                </p>
+            <div className="work-exp profile-side-div my-3">
+                <button className="btn"
+                onClick={() => window.location.href = linkedinURL}
+                >
+                Discover my work experiences on linkedin
+                </button>
+                <button className="btn"
+                onClick={() => window.location.href = githubURL}
+                >
+                    View my projects on GitHub
+                    </button>
+                <button className="btn" onClick={() => props.setPagenum(2)}>
+                    Visit my projects page
+                    </button>
             </div>
         )
     }

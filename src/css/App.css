@@ -1,4 +1,4 @@
-.profile-wrapper .profile-side-title, .wrapper {
+.profile-wrapper .profile-side-div.work-exp, .profile-wrapper .profile-side-title, .wrapper {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -22,7 +22,6 @@ html, body {
 
 .wrapper {
   height: 100vh;
-  padding: 2em 0 2em;
 }
 
 @keyframes typing {
@@ -176,6 +175,16 @@ html, body {
   background-color: salmon;
   color: white;
 }
+.profile-wrapper .profile-side-div.work-exp {
+  flex-direction: column;
+}
+.profile-wrapper .profile-side-div.work-exp button {
+  margin: 1em 0 1em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(252, 170, 149);
+}
 .profile-wrapper .profile-content {
   max-height: 75vh;
 }
@@ -208,6 +217,34 @@ html, body {
 }
 .projects-wrapper {
   background-color: black;
+  max-height: 100vh;
+  overflow: scroll;
+  font-family: "Courier New", Courier, monospace;
+}
+.projects-wrapper .container {
+  max-height: 80vh;
+  overflow: scroll;
+}
+.projects-wrapper .row {
+  height: auto;
+}
+.projects-wrapper .row div h4 {
+  color: salmon;
+}
+.projects-wrapper .row .project-card-text {
+  flex-direction: column;
+}
+.projects-wrapper .row .project-card-text p {
+  color: white;
+}
+.projects-wrapper .row .project-card-text ul {
+  color: rgb(252, 170, 149);
+}
+.projects-wrapper .row .project-card-text ul li {
+  color: peachpuff;
+}
+.projects-wrapper .row img {
+  max-height: 50vh;
 }
 
 /*

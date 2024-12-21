@@ -26,7 +26,6 @@ html, body {
 .wrapper {
     @extend %flex-center;
     height: 100vh;
-    padding: 2em 0 2em;
 }
 
 @keyframes typing {
@@ -197,6 +196,19 @@ html, body {
     .profile-side-div {
         background-color: salmon;
         color: white;
+
+        &.work-exp {
+            @extend %flex-center;
+            flex-direction: column;
+            button {
+                margin: 1em 0 1em;
+                width: 100%;
+                font-weight: bold;
+                color: black;
+                background-color: $mid-pink;
+            }
+        }
+
     }
 
     .profile-content {
@@ -234,6 +246,43 @@ html, body {
 
 .projects-wrapper {
     background-color: black;
+    max-height: 100vh;
+    overflow: scroll;
+    font-family: 'Courier New', Courier, monospace;
+
+    .container {
+        max-height: 80vh;
+        overflow: scroll;
+    }
+
+    
+    .row {
+        height: auto;
+        div {
+            h4 {
+                color: salmon;
+            }
+        }
+
+        .project-card-text{
+            flex-direction: column;
+
+            p {
+                color: white;
+            }
+
+            ul {
+                color: $mid-pink;
+                li {
+                    color: peachpuff;
+                }
+            }
+        }
+
+        img {
+            max-height: 50vh;
+        }
+    }
 }
 
 /*

@@ -30,7 +30,7 @@ export default function Homepage(props) {
                 )
             case 'profile':
                 return(
-                    <Profile/>
+                    <Profile setPagenum={setPagenum}/>
                 )
             case 'projects':
                 return(
