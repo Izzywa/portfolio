@@ -79,7 +79,7 @@ export default function Profile(props) {
                 <button className="btn"
                 onClick={() => window.location.href = linkedinURL}
                 >
-                Discover my work experiences on linkedin
+                Discover my work experiences on LinkedIn
                 </button>
                 <button className="btn"
                 onClick={() => window.location.href = githubURL}
