@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -11,10 +11,10 @@ export default function Profile(props) {
     const githubURL = "https://github.com/Izzywa"
     const workEmail = " ismail.izzatulnajwa@gmail.com"
     const phoneNum = "+6019 590 7266"
-    const profileDesc = "With over 7 years of experience in providing healthcare services, \
-    I offer a deep understanding of what it takes to provide a satisfactory and pleasurable \
-    experiece. Skilled in web programming using Django, React, Python, and Javascript, I \
-    am passionate about creating applications that are suitable for users from all walks of life."
+    const profileDesc = "With over 7 years of experience in providing healthcare services" +
+    "I offer a deep understanding of what it takes to provide a satisfactory and pleasurable" +
+    "experiece. Skilled in web programming using Django, React, Python, and Javascript, I" +
+    "am passionate about creating applications that are suitable for users from all walks of life."
 
     const EducationList = [
         {
@@ -101,7 +101,7 @@ export default function Profile(props) {
                         <div key={index}>
                             <p>
                                 <strong>{item.location}</strong>
-                                { item.start == item.end ?
+                                { item.start === item.end ?
                                 <small>[ {item.start} ]</small> 
                                 : 
                                 <small> [ {item.start} - {item.end} ]</small>

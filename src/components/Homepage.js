@@ -41,7 +41,7 @@ export default function Homepage(props) {
                     <Home/>
                 )
         }
-    }, [pagenum])
+    }, [pagenum, page])
     return (
         <div>
             <div className="border-btn" onClick={goToPrevPage}>
