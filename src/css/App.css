@@ -131,7 +131,6 @@ html, body {
   top: 0px;
 }
 .border-btn:nth-child(2) {
-  bottom: 0px;
   right: 0px;
 }
 .border-btn span {
@@ -247,18 +246,5 @@ html, body {
 .projects-wrapper .row img {
   max-height: 50vh;
 }
-
-/*
-
-.scroll-wrapper {
-    position: relative;
-    height: 50vh;
-    width: 100%;
-    width: auto;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    position: relative;
-}*/
 
 /*# sourceMappingURL=App.css.map */
