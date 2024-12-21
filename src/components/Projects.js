@@ -79,7 +79,7 @@ export default function Projects(props){
             timestamps on a YouTube Video. YouTube is not only used\
             for entertainment, it is also a source of education for many; especially for those\
             with financial constraints. This application was developed with that in mind to \
-            provide an accessiblite application for those who only have access to smartphones to \
+            provide an accessible application for those who only have access to smartphones to \
             read or write notes while viewing the video.',
             link: 'https://github.com/Izzywa/OnBeat'
         },

@@ -4,7 +4,7 @@ import Profile from "./Profile";
 import Projects from "./Projects";
 
 export default function Homepage(props) {
-    const page = ['profile', 'home', 'projects']
+    const page = ['Profile', 'Home', 'Projects']
 
     const [pagenum, setPagenum] = useState(1)
     function goToPrevPage() {
@@ -24,15 +24,15 @@ export default function Homepage(props) {
     }
     const DisplayPage = useCallback(() => {
         switch(page[pagenum]){
-            case 'home':
+            case 'Home':
                 return(
                     <Home/>
                 )
-            case 'profile':
+            case 'Profile':
                 return(
                     <Profile setPagenum={setPagenum}/>
                 )
-            case 'projects':
+            case 'Projects':
                 return(
                     <Projects />
                 )
