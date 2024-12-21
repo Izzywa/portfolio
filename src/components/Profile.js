@@ -11,12 +11,11 @@ export default function Profile(props) {
     const githubURL = "https://github.com/Izzywa"
     const workEmail = " ismail.izzatulnajwa@gmail.com"
     const phoneNum = "+6019 590 7266"
-    const profileDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
-    Etiam non tempus eros, at commodo dolor. Nam facilisis gravida massa ut auctor. Cras eget mauris id risus tincidunt varius. \
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
-    " 
+    const profileDesc = "With over 7 years of experience in providing healthcare services, \
+    I offer a deep understanding of what it takes to provide a satisfactory and pleasurable \
+    experiece. Skilled in web programming using Django, React, Python, and Javascipt, I \
+    am passionate about creating applications that is suitable for users from all walks of life."
+
     const EducationList = [
         {
             location: 'HarvardX',
@@ -66,7 +65,7 @@ export default function Profile(props) {
                 <div className="image-div"></div>
                 </div>
                 <div className="description-div text-center">
-                    <p>{profileDesc} {profileDesc}</p>
+                    <p>{profileDesc}</p>
                     </div>
             </div>
             </>
