@@ -5,6 +5,34 @@ import Network from '../images/Network.gif'
 export default function Projects(props){
     const projectsList = [
         {
+            title: 'This Portfolio!',
+            image: OnBeat,
+            tools: [
+                'JavaScript',
+                'HTML5',
+                'CSS3',
+                'React',
+                'GitHub'
+            ],
+            otherResources:[
+                {
+                    name: 'Bootstrap',
+                    link: 'https://getbootstrap.com/docs/5.3/getting-started/introduction/'
+                },
+                {
+                    name: 'MUI',
+                    link: 'https://mui.com/'
+                },
+            ],
+            description: 
+            'If you are viewing this, this portfolio is also one of my projects!\
+            This portfolio site was made with React and deployed to GitHub pages. \
+            You might be viewing this site in your computer or your mobile phone but this site \
+            was made to be responsive to any type of devices.',
+            link: 'https://github.com/Izzywa/portfolio'
+        },
+
+        {
             title: 'OnBeat',
             image: OnBeat,
             tools: [
