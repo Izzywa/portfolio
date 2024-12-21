@@ -185,7 +185,7 @@ html, body {
   background-color: rgb(252, 170, 149);
 }
 .profile-wrapper .profile-content {
-  max-height: 75vh;
+  max-height: 70vh;
 }
 .profile-wrapper .image-div {
   overflow: hidden;
