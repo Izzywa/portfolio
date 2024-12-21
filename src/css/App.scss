@@ -249,9 +249,11 @@ html, body {
     max-height: 100vh;
     overflow: scroll;
     font-family: 'Courier New', Courier, monospace;
+    @extend %flex-center;
 
     .container {
-        max-height: 80vh;
+        max-height: 90vh;
+        overflow: scroll;
     }
 
     

@@ -1,7 +1,8 @@
 import React from "react";
-import OnBeat from '../images/OnBeatMobileExample.gif'
-import Network from '../images/Network.gif'
-import Portfolio from '../images/Portfolio.gif'
+import Auction from '../images/Auction.gif';
+import OnBeat from '../images/OnBeat.gif';
+import Network from '../images/Network.gif';
+import Portfolio from '../images/Portfolio.gif';
 
 export default function Projects(props){
     const projectsList = [
@@ -32,8 +33,8 @@ export default function Projects(props){
             description: 
             'If you are viewing this, this portfolio is also one of my projects!\
             This portfolio site was made with React and deployed to GitHub pages. \
-            You might be viewing this site in your computer or your mobile phone but this site \
-            was made to be responsive to any type of devices.',
+            You might be viewing this site in your computer or your mobile phone but whatever the case,\
+            this site was made to be responsive to any type of devices.',
             link: 'https://github.com/Izzywa/portfolio/tree/main'
         },
 
@@ -104,6 +105,29 @@ export default function Projects(props){
             Proper secure measures were implemented to authenticate and authorise users, \
             providing different functionalities for users based on their authentication status.',
             link: 'https://github.com/Izzywa/Network'
+        },
+
+        {
+            title: 'Auction',
+            image: Auction,
+            tools: [
+                'Python',
+                'JavaScript',
+                'HTML5',
+                'CSS3',
+                'Django'
+            ],
+            otherResources:[
+                {
+                    name: 'Bootstrap',
+                    link: 'https://getbootstrap.com/docs/5.3/getting-started/introduction/'
+                }
+            ],
+            description: 
+            'Imitating an eBay-like e-commerce auction site, this Django application \
+            allows user to post auction listings, place bids on listings, comment on those listings. \
+            and add listings to a "watchlist".',
+            link: 'https://github.com/Izzywa/auction'
         }
     ]
 
