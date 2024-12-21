@@ -23,13 +23,17 @@ export default function Projects(props){
                     name: 'MUI',
                     link: 'https://mui.com/'
                 },
+                {
+                    name: 'Swiper',
+                    link: 'https://swiperjs.com/react'
+                }
             ],
             description: 
             'If you are viewing this, this portfolio is also one of my projects!\
             This portfolio site was made with React and deployed to GitHub pages. \
             You might be viewing this site in your computer or your mobile phone but this site \
             was made to be responsive to any type of devices.',
-            link: 'https://github.com/Izzywa/portfolio'
+            link: 'https://github.com/Izzywa/portfolio/tree/main'
         },
 
         {

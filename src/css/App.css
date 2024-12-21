@@ -223,7 +223,6 @@ html, body {
 }
 .projects-wrapper .container {
   max-height: 80vh;
-  overflow: scroll;
 }
 .projects-wrapper .row {
   height: auto;
