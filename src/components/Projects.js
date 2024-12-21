@@ -1,7 +1,8 @@
 import React from "react";
 import Auction from '../images/Auction.gif';
-import OnBeat from '../images/OnBeat.gif';
+import Mail from '../images/Mail.gif'
 import Network from '../images/Network.gif';
+import OnBeat from '../images/OnBeat.gif';
 import Portfolio from '../images/Portfolio.gif';
 
 export default function Projects(props){
@@ -108,6 +109,28 @@ export default function Projects(props){
         },
 
         {
+            title: 'Mail',
+            image: Mail,
+            tools: [
+                'Python',
+                'JavaScript',
+                'HTML5',
+                'CSS3',
+                'Django'
+            ],
+            otherResources:[
+                {
+                    name: 'Bootstrap',
+                    link: 'https://getbootstrap.com/docs/5.3/getting-started/introduction/'
+                }
+            ],
+            description: 
+            "This projects focuses on the front-end by designing a single-page application \
+            for an email client that makes API calls to send and receive emails.",
+            link: 'https://github.com/Izzywa/Mail'
+        },
+        
+        {
             title: 'Auction',
             image: Auction,
             tools: [
@@ -124,9 +147,10 @@ export default function Projects(props){
                 }
             ],
             description: 
-            'Imitating an eBay-like e-commerce auction site, this Django application \
+            "Imitating an eBay-like e-commerce auction site, this Django application \
             allows user to post auction listings, place bids on listings, comment on those listings. \
-            and add listings to a "watchlist".',
+            and add listings to a 'watchlist'. This project focuses on the use of Django forms and \
+            models to assure that only valid data is stored in the application's database.",
             link: 'https://github.com/Izzywa/auction'
         }
     ]

@@ -14,7 +14,7 @@ export default function Profile(props) {
     const profileDesc = "With over 7 years of experience in providing healthcare services, \
     I offer a deep understanding of what it takes to provide a satisfactory and pleasurable \
     experiece. Skilled in web programming using Django, React, Python, and Javascipt, I \
-    am passionate about creating applications that is suitable for users from all walks of life."
+    am passionate about creating applications that are suitable for users from all walks of life."
 
     const EducationList = [
         {

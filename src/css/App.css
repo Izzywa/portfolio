@@ -1,4 +1,4 @@
-.projects-wrapper, .profile-wrapper .profile-side-div.work-exp, .profile-wrapper .profile-side-title, .wrapper {
+.profile-wrapper .profile-side-div.work-exp, .profile-wrapper .profile-side-title, .wrapper {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -220,10 +220,11 @@ html, body {
   max-height: 100vh;
   overflow: scroll;
   font-family: "Courier New", Courier, monospace;
+  display: block;
+  padding: 2em 0 2em;
 }
 .projects-wrapper .container {
-  max-height: 90vh;
-  overflow: scroll;
+  max-height: auto;
 }
 .projects-wrapper .row {
   height: auto;
