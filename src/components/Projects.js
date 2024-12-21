@@ -4,6 +4,7 @@ import Mail from '../images/Mail.gif'
 import Network from '../images/Network.gif';
 import OnBeat from '../images/OnBeat.gif';
 import Portfolio from '../images/Portfolio.gif';
+import Sunlight from '../images/Sunlight.gif'
 
 export default function Projects(props){
     const projectsList = [
@@ -78,8 +79,8 @@ export default function Projects(props){
             timestamps on a YouTube Video. YouTube is not only used\
             for entertainment, it is also a source of education for many; especially for those\
             with financial constraints. This application was developed with that in mind to \
-            provide an accessiblity for those who only have access to smartphones to \
-            read or write notes while still keeping the video in view.',
+            provide an accessiblite application for those who only have access to smartphones to \
+            read or write notes while viewing the video.',
             link: 'https://github.com/Izzywa/OnBeat'
         },
 
@@ -152,6 +153,43 @@ export default function Projects(props){
             and add listings to a 'watchlist'. This project focuses on the use of Django forms and \
             models to assure that only valid data is stored in the application's database.",
             link: 'https://github.com/Izzywa/auction'
+        },
+
+        {
+            title: 'Sunlight',
+            image: Sunlight,
+            tools: [
+                'Python',
+                'JavaScript',
+                'HTML5',
+                'CSS3',
+                'Flask'
+            ],
+            otherResources:[
+                {
+                    name: 'Bootstrap',
+                    link: 'https://getbootstrap.com/docs/5.3/getting-started/introduction/'
+                },
+                {
+                    name: 'CS5O SQL',
+                    link: 'https://cs50.readthedocs.io/libraries/cs50/python/'
+                },
+                {
+                    name: 'SunriseSunset.io',
+                    link: 'https://sunrisesunset.io/'
+                }, 
+                {
+                    name: 'Cities.db',
+                    link: 'https://simplemaps.com/data/world-cities'
+                }
+            ],
+            description: 
+            "For my first ever personal project, I created a flask application that \
+            utilises the API from SunriseSunset.io to display the time for sunrise and \
+            sunset across various location around the globe. Styling was the focal point \
+            of this project to create an application that is as visually stunning as the \
+            twilit sky.",
+            link: 'https://github.com/Izzywa/Sunlight'
         }
     ]
 
