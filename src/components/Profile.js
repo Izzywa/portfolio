@@ -85,7 +85,7 @@ export default function Profile(props) {
                 <button className="btn"
                 onClick={() => window.location.href = githubURL}
                 >
-                    View my projects on GitHub
+                    View my projects codes on GitHub
                     </button>
                 <button className="btn" onClick={() => props.setPagenum(2)}>
                     Visit my projects page
