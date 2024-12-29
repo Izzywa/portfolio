@@ -8,6 +8,19 @@ export default function Home(props){
 
     const list = [
         {
+            title: "Github",
+            text: 'GitHub is is one of the most popular resources for developers to share code \
+            or work on projects together. I used GitHub to implement continuous integration \
+            and continuous delivery/deveployment (CI/CD) to streamline my development lifecyle \
+            such as the application of GitHub actions.'
+        }
+        ,
+        {
+            title: "Technical skills",
+            text: 'I am skilled in several programming languages and tools such as:  \
+             Python, JavaScript, HTML, CSS, React, Django, and SQL.'
+        },
+        {
             title: "react",
             text: 'React is a JavaScript library that allows for creation of \
             interactive user interfaces (UI). My experience and skill with React \
@@ -29,18 +42,7 @@ export default function Home(props){
             I am experienced with the use of Django as most of my application was made \
             with this framework.'
         },
-        {
-            title: "Github",
-            text: 'GitHub is is one of the most popular resources for developers to share code \
-            or work on projects together. I used GitHub to implement continuous integration \
-            and continuous delivery/deveployment (CI/CD) to streamline my development lifecyle \
-            such as the application of GitHub actions.'
-        }
-        ,{
-            title: "Technical skills",
-            text: 'I am skilled in several programming languages and tools such as:  \
-             Python, JavaScript, HTML, CSS, React, Django, and SQL.'
-        },
+        
 
     ]
 
