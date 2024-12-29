@@ -218,12 +218,15 @@ html, body {
   background-color: black;
   max-height: 100vh;
   overflow-y: scroll;
-  font-family: "Courier New", Courier, monospace;
   display: block;
   padding: 2em 0 2em;
 }
 .projects-wrapper .container {
   max-height: auto;
+}
+.projects-wrapper .main-card {
+  border: 0.5px solid white;
+  border-radius: 5px;
 }
 .projects-wrapper .row {
   height: auto;

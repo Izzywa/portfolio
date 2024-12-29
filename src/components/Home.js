@@ -9,38 +9,38 @@ export default function Home(props){
     const list = [
         {
             title: "Github",
-            text: 'GitHub is is one of the most popular resources for developers to share code \
-            or work on projects together. I used GitHub to implement continuous integration \
-            and continuous delivery/deveployment (CI/CD) to streamline my development lifecyle \
-            such as the application of GitHub actions.'
+            text: 'GitHub is is one of the most popular resources for developers to share code ' +
+            'or work on projects together. I used GitHub to implement continuous integration ' +
+            'and continuous delivery/deveployment (CI/CD) to streamline my development lifecyle ' +
+            'such as the application of GitHub actions.'
         }
         ,
         {
             title: "Technical skills",
-            text: 'I am skilled in several programming languages and tools such as:  \
-             Python, JavaScript, HTML, CSS, React, Django, and SQL.'
+            text: 'I am skilled in several programming languages and tools such as: ' +
+            'Python, JavaScript, HTML, CSS, React, Django, and SQL.'
         },
         {
             title: "react",
-            text: 'React is a JavaScript library that allows for creation of \
-            interactive user interfaces (UI). My experience and skill with React \
-            allows me to build application with improved user experience and faster \
-            rendering.'
+            text: 'React is a JavaScript library that allows for creation of ' +
+            'interactive user interfaces (UI). My experience and skill with React ' +
+            'allows me to build application with improved user experience and faster ' +
+            'rendering.'
         },
         {
             title: "web development",
-            text: 'I am experienced in full-stack web application development, \
-            enabling seamless user experiences with interactive user interface, \
-            and developing robust application workflows that run behind the scences. \
-            I aspire to create application that is robust, scalable and efficient.'
+            text: 'I am experienced in full-stack web application development,' +
+            'enabling seamless user experiences with interactive user interface, '+
+            'and developing robust application workflows that run behind the scences. ' +
+            'I aspire to create application that is robust, scalable and efficient.'
         },
         {
             title: "django",
-            text: 'Django is a free and open source high-level Python web framework that \
-            encourages rapid development and clean, pragmatic design. \
-            It is secure, scalable, and helps to complete application quickly.\
-            I am experienced with the use of Django as most of my application was made \
-            with this framework.'
+            text: 'Django is a free and open source high-level Python web framework that ' +
+            'encourages rapid development and clean, pragmatic design. ' +
+            'It is secure, scalable, and helps to complete application quickly. ' +
+            'I am experienced with the use of Django as most of my application was made ' +
+            'with this framework.'
         },
         
 

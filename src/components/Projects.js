@@ -33,10 +33,10 @@ export default function Projects(props){
                 }
             ],
             description: 
-            'If you are viewing this, this portfolio is also one of my projects!\
-            This portfolio site was made with React and deployed to GitHub pages. \
-            You might be viewing this site in your computer or your mobile phone but whatever the case,\
-            this site was made to be responsive to any type of devices.',
+            'If you are viewing this, this portfolio is also one of my projects! '+
+            'This portfolio site was made with React and deployed to GitHub pages. '+
+            'You might be viewing this site in your computer or your mobile phone but whatever the case, '+
+            'this site was made to be responsive to any type of devices.',
             link: 'https://github.com/Izzywa/portfolio/tree/main'
         },
 
@@ -75,12 +75,12 @@ export default function Projects(props){
                 }
             ],
             description: 
-            'OnBeat is the title of the web application created to take notes while inserting \
-            timestamps on a YouTube Video. YouTube is not only used\
-            for entertainment, it is also a source of education for many; especially for those\
-            with financial constraints. This application was developed with that in mind to \
-            provide an accessible application for those who only have access to smartphones to \
-            read or write notes while viewing the video.',
+            'OnBeat is the title of the web application created to take notes while inserting '+
+            'timestamps on a YouTube Video. YouTube is not only used '+
+            'for entertainment, it is also a source of education for many; especially for those '+
+            'with financial constraints. This application was developed with that in mind to ' +
+            'provide an accessible application for those who only have access to smartphones to '+
+            'read or write notes while viewing the video.',
             link: 'https://github.com/Izzywa/OnBeat'
         },
 
@@ -102,10 +102,10 @@ export default function Projects(props){
                 }
             ],
             description: 
-            'This project was made to imitate a social media platfrom that allows users to\
-            make posts, follow other users and "like" a post.\
-            Proper secure measures were implemented to authenticate and authorise users, \
-            providing different functionalities for users based on their authentication status.',
+            'This project was made to imitate a social media platfrom that allows users to '+
+            'make posts, follow other users and "like" a post.'+
+            'Proper secure measures were implemented to authenticate and authorise users, '+
+            'providing different functionalities for users based on their authentication status.',
             link: 'https://github.com/Izzywa/Network'
         },
 
@@ -126,8 +126,8 @@ export default function Projects(props){
                 }
             ],
             description: 
-            "This projects focuses on the front-end by designing a single-page application \
-            for an email client that makes API calls to send and receive emails.",
+            "This projects focuses on the front-end by designing a single-page application " +
+            "for an email client that makes API calls to send and receive emails.",
             link: 'https://github.com/Izzywa/Mail'
         },
         
@@ -148,10 +148,10 @@ export default function Projects(props){
                 }
             ],
             description: 
-            "Imitating an eBay-like e-commerce auction site, this Django application \
-            allows user to post auction listings, place bids on listings, comment on those listings, \
-            and add listings to a 'watchlist'. This project focuses on the use of Django forms and \
-            models to assure that only valid data is stored in the application's database.",
+            "Imitating an eBay-like e-commerce auction site, this Django application "+
+            "allows user to post auction listings, place bids on listings, comment on those listings, "+
+            "and add listings to a 'watchlist'. This project focuses on the use of Django forms and " +
+            "models to assure that only valid data is stored in the application's database.",
             link: 'https://github.com/Izzywa/auction'
         },
 
@@ -184,25 +184,25 @@ export default function Projects(props){
                 }
             ],
             description: 
-            "For my first ever personal project, I created a flask application that \
-            utilises the API from SunriseSunset.io to display the time for sunrise and \
-            sunset across various location around the globe. Styling was the focal point \
-            of this project to create an application that is as visually stunning as the \
-            twilit sky.",
+            "For my first ever personal project, I created a flask application that "+
+            "utilises the API from SunriseSunset.io to display the time for sunrise and "+
+            "sunset across various location around the globe. Styling was the focal point "+
+            "of this project to create an application that is as visually stunning as the "+
+            "twilit sky.",
             link: 'https://github.com/Izzywa/Sunlight'
         }
     ]
 
     function ProjectCard({ item }) {
         return( 
-            <div className="row my-3">
+            <div className="row main-card my-3 px-1 py-2">
                 <div className="col-12 project-card-title text-center">
                     <h4><strong>{item.title}</strong></h4>
                 </div>
                 <div className="col-lg-6 col-12 text-center">
-                    <img className="img-fluid" src={item.image}/>
+                    <img className="img-fluid" src={item.image} alt="project example"/>
                 </div>
-                <div className="col-lg-6 col-12 project-card-text py-2">
+                <div className="col-lg-6 col-12 project-card-text">
                     <a href={item.link}> - GitHub Link</a>
                     <p>{item.description}</p>
                     <div className="row">
@@ -237,6 +237,9 @@ export default function Projects(props){
     }
     return (
         <div className="wrapper projects-wrapper">
+        <h2 className="d-flex align-items-center justify-content-center text-light">
+            <strong>PROJECTS</strong>
+            </h2>
             <div className="container">
                 {projectsList.map((item, index) => {
                     return(
