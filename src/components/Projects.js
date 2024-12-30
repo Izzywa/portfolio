@@ -118,7 +118,8 @@ export default function Projects(props){
                 'JavaScript',
                 'HTML5',
                 'CSS3',
-                'Django'
+                'Django',
+                'GitHub Action'
             ],
             otherResources:[
                 {
