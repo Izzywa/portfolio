@@ -237,6 +237,12 @@ html, body {
 .projects-wrapper .row .project-card-text {
   flex-direction: column;
 }
+.projects-wrapper .row .project-card-text button {
+  text-decoration: underline;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
 .projects-wrapper .row .project-card-text p {
   color: white;
 }
@@ -244,7 +250,7 @@ html, body {
   color: rgb(252, 170, 149);
 }
 .projects-wrapper .row .project-card-text ul li {
-  color: peachpuff;
+  color: white;
 }
 .projects-wrapper .row img {
   max-height: 50vh;

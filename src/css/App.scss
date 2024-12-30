@@ -269,6 +269,12 @@ html, body {
 
         .project-card-text{
             flex-direction: column;
+            button {
+                text-decoration: underline;
+                color: white;
+                background-color: transparent;
+                border: none;
+            }
 
             p {
                 color: white;
@@ -277,7 +283,7 @@ html, body {
             ul {
                 color: $mid-pink;
                 li {
-                    color: peachpuff;
+                    color: white;
                 }
             }
         }

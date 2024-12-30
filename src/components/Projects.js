@@ -5,6 +5,7 @@ import Network from '../images/Network.gif';
 import OnBeat from '../images/OnBeat.gif';
 import Portfolio from '../images/Portfolio.gif';
 import Sunlight from '../images/Sunlight.gif'
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 export default function Projects(props){
     const projectsList = [
@@ -103,7 +104,7 @@ export default function Projects(props){
             ],
             description: 
             'This project was made to imitate a social media platfrom that allows users to '+
-            'make posts, follow other users and "like" a post.'+
+            'make posts, follow other users and "like" a post. '+
             'Proper secure measures were implemented to authenticate and authorise users, '+
             'providing different functionalities for users based on their authentication status.',
             link: 'https://github.com/Izzywa/Network'
@@ -193,18 +194,23 @@ export default function Projects(props){
         }
     ]
 
+    function openNewTab(link) {
+        window.open(link, "_blank", "noreferrer");
+    }
+
     function ProjectCard({ item }) {
         return( 
             <div className="row main-card my-3 px-1 py-2">
                 <div className="col-12 project-card-title text-center">
                     <h4><strong>{item.title}</strong></h4>
                 </div>
-                <div className="col-lg-6 col-12 text-center">
+                <div className="col-lg-6 col-12 text-center py-2">
                     <img className="img-fluid" src={item.image} alt="project example"/>
                 </div>
                 <div className="col-lg-6 col-12 project-card-text">
-                    <a href={item.link}> - GitHub Link</a>
-                    <p>{item.description}</p>
+                    <button onClick={() => openNewTab(item.link)}>
+                         - GitHub Link <OpenInNewIcon fontSize="small"/></button>
+                    <p className="py-1">{item.description}</p>
                     <div className="row">
                         <div className="col-6">
 
@@ -224,7 +230,9 @@ export default function Projects(props){
                                 {item.otherResources.map((otherResourcesItem, otherResourcesIndex) => {
                                 return(
                                     <li key={otherResourcesIndex}>
-                                        <a href={otherResourcesItem.link}>{otherResourcesItem.name}</a>
+                                        <button onClick={() => openNewTab(otherResourcesItem.link)}>
+                                            {otherResourcesItem.name} <OpenInNewIcon fontSize="small"/>
+                                            </button>
                                         </li>
                                 )
                             })}
