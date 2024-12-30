@@ -89,7 +89,7 @@ html, body {
   overflow-y: scroll;
 }
 .skill-card .card-text p {
-  padding: 1em 1em 2em;
+  padding: 2em;
 }
 .skill-card.active-card {
   transform: scaleX(80%) scaleY(90%);

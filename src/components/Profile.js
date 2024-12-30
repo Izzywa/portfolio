@@ -13,7 +13,7 @@ export default function Profile(props) {
     const phoneNum = "+6019 590 7266"
     const profileDesc = "With over 7 years of experience in providing healthcare services" +
     "I offer a deep understanding of what it takes to provide a satisfactory and pleasurable" +
-    "experiece. Skilled in web programming using Django, React, Python, and Javascript, I" +
+    "experiece. Skilled in web programming using Django, React, Python, and Javascript, I " +
     "am passionate about creating applications that are suitable for users from all walks of life."
 
     const EducationList = [
