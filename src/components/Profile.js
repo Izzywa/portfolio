@@ -168,16 +168,12 @@ export default function Profile(props) {
             expanded={expanded === 'profile'} 
             onChange={() => handleChange('profile')}>
 
-            {
-                expanded === 'profile' ?
-                null :
-                <AccordionSummary 
-                expandIcon={<ExpandMoreIcon/>}
-                    aria-controls="profile-content"
-                    style={accordionTitle}>
-                    profile
-                    </AccordionSummary>
-            }
+            <AccordionSummary 
+            expandIcon={<ExpandMoreIcon/>}
+                aria-controls="profile-content"
+                style={accordionTitle}>
+                profile
+                </AccordionSummary>
 
                     <AccordionDetails
                     sx={{
