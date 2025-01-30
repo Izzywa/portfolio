@@ -4,7 +4,8 @@ import Mail from '../images/Mail.gif'
 import Network from '../images/Network.gif';
 import OnBeat from '../images/OnBeat.gif';
 import Portfolio from '../images/Portfolio.gif';
-import Sunlight from '../images/Sunlight.gif'
+import Sunlight from '../images/Sunlight.gif';
+import Banknote from '../images/banknote_authentication_correct_labels.png';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 export default function Projects(props){
@@ -39,6 +40,28 @@ export default function Projects(props){
             'You might be viewing this site in your computer or your mobile phone but whatever the case, '+
             'this site was made to be responsive to any type of devices.',
             link: 'https://github.com/Izzywa/portfolio/tree/main'
+        },
+        {
+            title: 'K-means Clustering on Banknote Authentication',
+            image: Banknote,
+            tools: [
+                'Python',
+                'Scikit',
+                'pyplot',
+                'pandas'
+            ],
+            otherResources:[
+                {
+                    name: 'OpenML dataset',
+                    link: 'https://www.openml.org/search?type=data&sort=runs&id=1462&status=active'
+                }
+            ],
+            description: 
+            'The Banknote Authentication project is a data science project to evaluate ' +
+            'the effectiveness of K-means, an unsupervised clustering algorithm, on classifying ' +
+            'banknotes on whether they are genuine or fake based on the given dataset.',
+            link: 'https://github.com/Izzywa/KMeansClustering'
+
         },
 
         {
