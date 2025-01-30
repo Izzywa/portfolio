@@ -18,6 +18,14 @@ export default function Profile(props) {
 
     const EducationList = [
         {
+            location: 'University of London',
+            start: 'Ongoing',
+            end: 'Ongoing',
+            certification: [
+                'Master in Computer Science'
+            ]
+        },
+        {
             location: 'HarvardX',
             start: new Date(2024, 3).getFullYear(),
             end: new Date(2024, 3).getFullYear(),
