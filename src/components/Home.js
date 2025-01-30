@@ -17,7 +17,7 @@ export default function Home(props){
         {
             title: "Technical skills",
             text: 'I am skilled in several programming languages and tools such as: ' +
-            'Python, JavaScript, HTML, CSS, React, Django, SQL, GitHub.'
+            'Python, JavaScript, HTML, CSS, React, Django, SQL, MySQL, GitHub.'
         },
         {
             title: "react",
@@ -37,7 +37,13 @@ export default function Home(props){
             'encourages rapid development of an application that is ' +
             'secure, and scalable. ' 
         },
-        
+        {
+            title: "SQL",
+            text: 'I have skill in SQL, SQLite, and MySQL. ' +
+            'I am able to design a normalised relational database, perform queries, ' +
+            'creating indexes, views, triggers, and stored procedures for optimisation, as well as manage user permission on MySQL. ' +
+            'I also ensure the queries are prepared when run through python.'  
+        },
 
     ]
 
