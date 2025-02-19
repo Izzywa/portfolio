@@ -7,6 +7,7 @@ import Portfolio from '../images/Portfolio.gif';
 import Sunlight from '../images/Sunlight.gif';
 import Banknote from '../images/banknote_authentication_correct_labels.png';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import AntibioticDatabase from '../images/statisticsGif.gif'
 
 export default function Projects(props){
     const projectsList = [
@@ -40,6 +41,46 @@ export default function Projects(props){
             'You might be viewing this site in your computer or your mobile phone but whatever the case, '+
             'this site was made to be responsive to any type of devices.',
             link: 'https://github.com/Izzywa/portfolio/tree/main'
+        },
+        {
+            title: 'Antibiotics Database',
+            image: AntibioticDatabase,
+            tools: [
+                'Django',
+                'React',
+                'Python',
+                'pandas',
+                'SQL',
+                'MySQL',
+                'Django REST Framework',
+                'GitHub Actions'
+            ],
+            otherResources: [
+                {
+                    name: 'Material UI',
+                    link: 'https://mui.com/material-ui/?srsltid=AfmBOoryqd9FKIXhjsoi_BOaqR9e_5UR-MZDNsKc6Jy1UDxi_mKB1nIb'
+                },
+                {
+                    name: 'Bootstrap',
+                    link: 'https://getbootstrap.com/docs/5.3/getting-started/introduction/'
+                },
+                {
+                    name: 'chartjs',
+                    link: 'https://www.chartjs.org/docs/latest/'
+                },
+                {
+                    name: 'react-chartjs-2',
+                    link: 'https://react-chartjs-2.js.org/'
+                }, 
+                {
+                    name: 'amchart5',
+                    link: 'https://www.amcharts.com/docs/v5/'
+                }
+            ],
+            description: "A database was created in MySQL to store the information on antibiotics and patiensts " +
+            'diagnosis and compliance to them. The web application then utilises the database for API requests using Djanog REST Framework and ' + 
+            "Libraries such as amchart5 and react-chartjs-2 were used to display the statistics from them",
+            link: 'https://github.com/Izzywa/database'
         },
         {
             title: 'K-means Clustering on Banknote Authentication',
