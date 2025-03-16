@@ -29,10 +29,6 @@ export default function Projects(props){
                 {
                     name: 'MUI',
                     link: 'https://mui.com/'
-                },
-                {
-                    name: 'Swiper',
-                    link: 'https://swiperjs.com/react'
                 }
             ],
             description: 

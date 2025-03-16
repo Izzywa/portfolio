@@ -4,6 +4,11 @@ import AntibioticDatabase from '../images/statisticsGif.gif'
 import GithubActions from '../images/github_actions.png'
 import MySQL from '../images/mysql_sample.gif'
 import UnitTest from '../images/unit_test.png'
+import github from '../images/github.png'
+import Django from '../images/django-restframework.png'
+import MUI from '../images/InputScrollIntoView.gif'
+import API from '../images/TimestampSearch.gif'
+import DataVisualisation from '../images/banknote_authentication_correct_labels.png'
 import { Grid2 as Grid } from "@mui/material";
 
 export default function Home2(props) {
@@ -28,6 +33,31 @@ export default function Home2(props) {
             label: 'Unit test',
             img: UnitTest,
             alt: 'sample of unit test'
+        },
+        {
+            label: 'Version Control with Git & GitHub',
+            img: github,
+            alt: 'sample of github'
+        },
+        {
+            label: 'Django & Django REST framework',
+            img: Django,
+            alt: 'sample django'
+        },
+        {
+            label: 'Material UI & Bootstrap',
+            img: MUI,
+            alt: 'sample MUI'
+        },
+        {
+            label: 'API consumption and creation',
+            img: API,
+            alt: 'sample API'
+        },
+        {
+            label: 'Data Visualisation',
+            img: DataVisualisation,
+            alt: 'sample data visualisation'
         }
     ]
 
