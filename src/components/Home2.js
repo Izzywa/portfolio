@@ -1,6 +1,9 @@
 import React, { Fragment } from "react";
 import Masonry from '@mui/lab/Masonry';
 import AntibioticDatabase from '../images/statisticsGif.gif'
+import GithubActions from '../images/github_actions.png'
+import MySQL from '../images/mysql_sample.gif'
+import UnitTest from '../images/unit_test.png'
 import { Grid2 as Grid } from "@mui/material";
 
 export default function Home2(props) {
@@ -10,6 +13,21 @@ export default function Home2(props) {
             label: 'ReactJS',
             img: AntibioticDatabase,
             alt: 'sample of react'
+        },
+        {
+            label: 'GitHub Actions',
+            img: GithubActions,
+            alt: 'sample of github actions'
+        },
+        {
+            label: 'SQL & MySQL',
+            img: MySQL,
+            alt: 'sample of mysql'
+        },
+        {
+            label: 'Unit test',
+            img: UnitTest,
+            alt: 'sample of unit test'
         }
     ]
 
