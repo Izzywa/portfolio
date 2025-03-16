@@ -2,6 +2,7 @@ import React, {useCallback, useState } from "react";
 import Home from "./Home";
 import Profile from "./Profile";
 import Projects from "./Projects";
+import Home2 from "./Home2";
 
 export default function Homepage(props) {
     const page = ['Profile', 'Home', 'Projects']
@@ -22,11 +23,12 @@ export default function Homepage(props) {
         }
 
     }
+
     const DisplayPage = useCallback(() => {
         switch(page[pagenum]){
             case 'Home':
                 return(
-                    <Home/>
+                    <Home2/>
                 )
             case 'Profile':
                 return(
@@ -42,6 +44,7 @@ export default function Homepage(props) {
                 )
         }
     }, [pagenum, page])
+
     return (
         <div>
             <div className="border-btn" onClick={goToPrevPage}>
