@@ -28,10 +28,11 @@ export default function Profile(props) {
         {
             location: 'HarvardX',
             start: new Date(2024, 3).getFullYear(),
-            end: new Date(2024, 3).getFullYear(),
+            end: new Date(2025, 2).getFullYear(),
             certification: [
                 "CS50's Introduction to Computer Science",
-                "CS50's Web Programming with Python and JavaScript"
+                "CS50's Web Programming with Python and JavaScript",
+                "CS50's Introduction to Databases with SQL"
             ]
         },
         {
