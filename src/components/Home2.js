@@ -15,7 +15,7 @@ export default function Home2(props) {
 
     const skillList = [
         {
-            label: 'ReactJS',
+            label: 'JavaScript & ReactJS',
             img: AntibioticDatabase,
             alt: 'sample of react'
         },
@@ -40,7 +40,7 @@ export default function Home2(props) {
             alt: 'sample of github'
         },
         {
-            label: 'Django & Django REST framework',
+            label: 'Python & Django REST framework',
             img: Django,
             alt: 'sample django'
         },
