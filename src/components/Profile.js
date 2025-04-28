@@ -3,14 +3,12 @@ import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 
 export default function Profile(props) {
 
     const linkedinURL = "https://www.linkedin.com/in/izzatul-najwa-binti-ismail/"
     const githubURL = "https://github.com/Izzywa"
     const workEmail = " ismail.izzatulnajwa@gmail.com"
-    const phoneNum = "+6019 590 7266"
     const profileDesc = "With over 7 years of experience in providing healthcare services" +
     "I offer a deep understanding of what it takes to provide a satisfactory and pleasurable" +
     "experiece. Skilled in web programming using Django, React, Python, and Javascript, I " +
@@ -68,7 +66,6 @@ export default function Profile(props) {
                 <div className="contact-div text-center">
                     <p onClick={redirectLinkedin}><LinkedInIcon/><u>LinkedIn</u></p>
                     <p><MailOutlineIcon/> {workEmail}</p>
-                    <p><PhoneIphoneIcon/> {phoneNum}</p>
                 </div>
             <div className="d-flex align-items-center justify-content-center">
                 <div className="image-div"></div>
