@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.dd7b19d0.css",
-    "main.js": "/portfolio/static/js/main.42f2cf1c.js",
+    "main.js": "/portfolio/static/js/main.6e88a456.js",
     "static/js/488.9561f9b8.chunk.js": "/portfolio/static/js/488.9561f9b8.chunk.js",
     "static/media/Auction.gif": "/portfolio/static/media/Auction.eb9a5782128976b4f054.gif",
     "static/media/OnBeat.gif": "/portfolio/static/media/OnBeat.03a5dc2639de2c58bf74.gif",
@@ -19,13 +19,14 @@
     "static/media/django-restframework.png": "/portfolio/static/media/django-restframework.508d8860af8b473a0878.png",
     "static/media/github_actions.png": "/portfolio/static/media/github_actions.dcd2878b32042863b5f3.png",
     "static/media/banknote_authentication_correct_labels.png": "/portfolio/static/media/banknote_authentication_correct_labels.f43df033296c19d3bad2.png",
+    "static/media/asp-net-core-c-sharp-logo.jpg": "/portfolio/static/media/asp-net-core-c-sharp-logo.b1206aa0a5ecc1e1622e.jpg",
     "index.html": "/portfolio/index.html",
     "main.dd7b19d0.css.map": "/portfolio/static/css/main.dd7b19d0.css.map",
-    "main.42f2cf1c.js.map": "/portfolio/static/js/main.42f2cf1c.js.map",
+    "main.6e88a456.js.map": "/portfolio/static/js/main.6e88a456.js.map",
     "488.9561f9b8.chunk.js.map": "/portfolio/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dd7b19d0.css",
-    "static/js/main.42f2cf1c.js"
+    "static/js/main.6e88a456.js"
   ]
 }
