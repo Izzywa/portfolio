@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.dd7b19d0.css",
-    "main.js": "/portfolio/static/js/main.fb697cf0.js",
+    "main.js": "/portfolio/static/js/main.450a477e.js",
     "static/js/488.9561f9b8.chunk.js": "/portfolio/static/js/488.9561f9b8.chunk.js",
     "static/media/Auction.gif": "/portfolio/static/media/Auction.eb9a5782128976b4f054.gif",
     "static/media/OnBeat.gif": "/portfolio/static/media/OnBeat.03a5dc2639de2c58bf74.gif",
@@ -20,13 +20,14 @@
     "static/media/github_actions.png": "/portfolio/static/media/github_actions.dcd2878b32042863b5f3.png",
     "static/media/banknote_authentication_correct_labels.png": "/portfolio/static/media/banknote_authentication_correct_labels.f43df033296c19d3bad2.png",
     "static/media/asp-net-core-c-sharp-logo.jpg": "/portfolio/static/media/asp-net-core-c-sharp-logo.b1206aa0a5ecc1e1622e.jpg",
+    "static/media/graphql.png": "/portfolio/static/media/graphql.67edc0b63562c554b72c.png",
     "index.html": "/portfolio/index.html",
     "main.dd7b19d0.css.map": "/portfolio/static/css/main.dd7b19d0.css.map",
-    "main.fb697cf0.js.map": "/portfolio/static/js/main.fb697cf0.js.map",
+    "main.450a477e.js.map": "/portfolio/static/js/main.450a477e.js.map",
     "488.9561f9b8.chunk.js.map": "/portfolio/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dd7b19d0.css",
-    "static/js/main.fb697cf0.js"
+    "static/js/main.450a477e.js"
   ]
 }
